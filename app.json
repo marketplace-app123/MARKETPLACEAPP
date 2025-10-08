@@ -1,29 +1,34 @@
 {
-  "expo": {
-    "name": "Marketplace Eventi e Fiere",
-    "slug": "marketplace-eventi-e-fiere",
-    "scheme": "marketplace",
-    "version": "1.1.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.eventiefiere.marketplace"
-    },
-    "android": {
-      "package": "com.eventiefiere.marketplace",
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.png",
-        "backgroundColor": "#ffffff"
+  "cli": {
+    "version": ">= 12.0.0"
+  },
+  "build": {
+    "production": {
+      "node": "18.17.0",
+      "env": {
+        "EXPO_NO_YARN": "1"
+      },
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "ios": {
+        "simulator": false
       }
     },
-    "plugins": [
-      "expo-router"
-    ]
+    "preview": {
+      "node": "18.17.0",
+      "env": {
+        "EXPO_NO_YARN": "1"
+      },
+      "android": {
+        "buildType": "apk"
+      },
+      "ios": {
+        "simulator": true
+      }
+    }
+  },
+  "submit": {
+    "production": {}
   }
 }
