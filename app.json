@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "Marketplace",
-    "slug": "marketplace",
+    "name": "Marketplace Eventi e Fiere",
+    "slug": "marketplace-eventi-e-fiere",
     "scheme": "marketplace",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {

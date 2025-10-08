@@ -1,25 +1,16 @@
-# Marketplace (wrapper app)
-App Expo semplicissima per mostrare categorie come icone e aprire il tuo sito dentro l'app (WebView).
-- Tocca una categoria -> si apre l'URL in una WebView interna
-- Tocca "Accedi/Registrati" -> apre l'URL di login del sito
+# Marketplace Eventi e Fiere (Wrapper App)
+URL impostati:
+- Login: https://marketplace.eventiefiere.com/mio-account/
+- Motori: https://marketplace.eventiefiere.com/categoria-prodotto/motori/
+- Market: https://marketplace.eventiefiere.com/categoria-prodotto/market/
+- Immobili: https://marketplace.eventiefiere.com/categoria-prodotto/immobili/
+- Lavoro: https://marketplace.eventiefiere.com/categoria-prodotto/lavoro/
+- Regalo: https://marketplace.eventiefiere.com/categoria-prodotto/regalo/
 
-## Avvio
-```bash
+## Avvio locale (se vuoi provare con Node/Expo)
 npm install
 npx expo start
-```
 
-## Configura le URL
-Modifica `constants.ts` (LOGIN_URL, CATEGORIES[].url) con gli indirizzi reali del tuo sito/marketplace.
-
-## Build per Store (EAS)
-```bash
-npm i -g eas-cli
-eas login
-eas build:configure
-eas build -p android --profile preview
-# (su Mac) eas build -p ios --profile preview
-```
-
-### Nota su policy Store
-Apple a volte rifiuta app che sono solo un "sito in una WebView". Aggiungere piccole funzioni native (es. link deep, share, push) aumenta le chance di approvazione.
+## Build cloud con EAS (senza installare nulla in locale, via CI)
+- Collega il repo su expo.dev → Projects → Connect a GitHub repository
+- Avvia build: Android (APK/AAB) e iOS (IPA/TestFlight)
