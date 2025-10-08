@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "Marketplace",
+    "slug": "marketplace",
+    "scheme": "marketplace",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.eventiefiere.marketplace"
+    },
+    "android": {
+      "package": "com.eventiefiere.marketplace",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}
